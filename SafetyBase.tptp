@@ -1,0 +1,2 @@
+fof(ax,conjecture, (~ (~ vS100_G_1 & (vS100_G_2 & vS100_AM__U_1)) |  vS104__DEST_ASP_1) & 
+$true) .

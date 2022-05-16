@@ -1,0 +1,45 @@
+[undefined0]
+#
+Safety condition to be proved: 
+\begin{center}
+(\(\neg\)8252.RU \(\vee\) \(\neg\)8253(2).RU)
+\end{center}
+#
+(~"8252.RU" | ~"8253(2).RU")
+
+[undefined1]
+#
+Safety condition to be proved: 
+\begin{center}
+(\(\neg\)8252.RU \(\vee\) \(\neg\)8254.RU)
+\end{center}
+#
+(~"8252.RU" | ~"8254.RU")
+
+[undefined2]
+#
+Safety condition to be proved: 
+\begin{center}
+(\(\neg\)8253(1).RU \(\vee\) \(\neg\)8253(2).RU)
+\end{center}
+#
+(~"8253(1).RU" | ~"8253(2).RU")
+
+[undefined3]
+#
+Safety condition to be proved: 
+\begin{center}
+(\(\neg\)8253(1).RU \(\vee\) \(\neg\)8254.RU)
+\end{center}
+#
+(~"8253(1).RU" | ~"8254.RU")
+
+[undefined4]
+#
+Safety condition to be proved: 
+\begin{center}
+(\(\neg\)8253(2).RU \(\vee\) \(\neg\)8254.RU)
+\end{center}
+#
+(~"8253(2).RU" | ~"8254.RU")
+

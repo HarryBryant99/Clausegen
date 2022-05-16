@@ -1,0 +1,6 @@
+[group0]
+#
+Property with instances: s1: S100, s2: S104, rn: S100(AM), 
+#
+((~("S100.G_0")) & (("S100.G_1") & ("S100(AM).U_0"))) -> ("S104.(DEST)ASP_0")
+

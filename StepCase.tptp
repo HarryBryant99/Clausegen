@@ -1,0 +1,2 @@
+include('Ladder.tptp') .
+include('SafetyStep.tptp') .

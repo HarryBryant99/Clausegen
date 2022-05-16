@@ -41,7 +41,6 @@ library
       FormulaTree
       Ladder
       Safety
-      Slicer
       ShowTree
       TptpPrinter
       GcssParser.GcssParser

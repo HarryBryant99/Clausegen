@@ -21,7 +21,6 @@ import FormulaTree hiding (children)
 import ClauseSet
 import CNF
 import Safety
-import Slicer
 import TptpPrinter
 
 printTp :: String -> [Formula] -> [Int] -> IO()
@@ -169,57 +168,9 @@ main :: IO ()
 main =  do 
   args <- cmdArgs defaultOptions
   let ladderArg = ladderFile args
-  let safetyArg = safetyFile args
-  let verifArg =  proofStrategy args
-  let stepsArg = bound args
-  let genArg = generateLadder args
-  let sliceArg = performSlicing args
-  
-  source <- readFile ladderArg
-  let num = read stepsArg::Int                               
+  source <- readFile ladderArg                              
   let (ladder, srlatches) = (gcss.alexScanTokens) source
---  let ladder = fst((gcss.alexScanTokens) source)
   let compiled = (compile 1 ladder)
-  let srformula = createSRLatchFormula srlatches
-  rawscript <- readFile safetyArg
-  let script = readSafetyConditions (fst ladder) rawscript
-  let sc = [((script !! 0) 0)]
-  case verifArg of
-    "inductive" ->   do
-
-      printInitialTp compiled --Slice?
-      case genArg of
-        "yes" -> do
-            case sliceArg of
-              "yes" -> do 
-                let slicedladder = slice compiled (extractVars2 (sc !! 0))
-                printTp "Ladder.tptp" slicedladder [0..1] 
-              "no" -> do 
-                printTp "Ladder.tptp" compiled [0..1] 
-        "no" -> return();
-
---      printTp "SRLatches.tptp" srlarches [0..1]
-      printSafetyBase sc
-      printSafetyStep sc
-      printBaseVerification
-      printStepVerification
-      system "z3_tptp.exe BaseCase.tptp"
-      system "z3_tptp.exe StepCase.tptp"                            
-      return()
-    "bmc" -> do
-      printInitialTp compiled --Slice?
-      case genArg of
-        "yes" -> do
-            case sliceArg of
-              "yes" -> do 
-                let slicedladder = slice compiled (extractVars2 (sc !! 0))
-                printTp "Ladder.tptp" slicedladder [0..num]
-              "no" -> do 
-                printTp "Ladder.tptp" compiled [0..num] 
-        "no" -> return();
---    printTp "SRLatches.tptp" srlarches [0..num]
-      printSafety num sc
-      printBMC
-      system "z3_tptp.exe -m BMC.tptp"                                
-      return()          
+  printTp "Ladder.tptp" compiled [0..1]                          
+  return()        
       

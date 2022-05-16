@@ -1,0 +1,4 @@
+fof(ax,axiom, (~ (~ vS100_G_0 & (vS100_G_1 & vS100_AM__U_0)) |  vS104__DEST_ASP_0)).
+
+fof(ax,conjecture, (~ (~ vS100_G_1 & (vS100_G_2 & vS100_AM__U_1)) |  vS104__DEST_ASP_1) & 
+$true) .

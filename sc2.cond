@@ -1,0 +1,72 @@
+[undefined0]
+#
+Safety condition to be proved: 
+\begin{center}
+((8252.RU \(\wedge\) \(\neg\)8301/02.REL) \(\rightarrow\) (8301/02.NL \(\wedge\) \(\neg\)8301/02.RL))
+\end{center}
+#
+(("8252.RU" & ~"8301/02.REL") -> ("8301/02.NL" & ~"8301/02.RL"))
+
+[undefined1]
+#
+Safety condition to be proved: 
+\begin{center}
+((8252.RU \(\wedge\) \(\neg\)8303/04.REL) \(\rightarrow\) (8303/04.NL \(\wedge\) \(\neg\)8303/04.RL))
+\end{center}
+#
+(("8252.RU" & ~"8303/04.REL") -> ("8303/04.NL" & ~"8303/04.RL"))
+
+[undefined2]
+#
+Safety condition to be proved: 
+\begin{center}
+((8253(1).RU \(\wedge\) \(\neg\)8301/02.REL) \(\rightarrow\) (8301/02.NL \(\wedge\) \(\neg\)8301/02.RL))
+\end{center}
+#
+(("8253(1).RU" & ~"8301/02.REL") -> ("8301/02.NL" & ~"8301/02.RL"))
+
+[undefined3]
+#
+Safety condition to be proved: 
+\begin{center}
+((8253(1).RU \(\wedge\) \(\neg\)8303/04.REL) \(\rightarrow\) (8303/04.NL \(\wedge\) \(\neg\)8303/04.RL))
+\end{center}
+#
+(("8253(1).RU" & ~"8303/04.REL") -> ("8303/04.NL" & ~"8303/04.RL"))
+
+[undefined4]
+#
+Safety condition to be proved: 
+\begin{center}
+((8253(2).RU \(\wedge\) \(\neg\)8301/02.REL) \(\rightarrow\) (8301/02.RL \(\wedge\) \(\neg\)8301/02.NL))
+\end{center}
+#
+(("8253(2).RU" & ~"8301/02.REL") -> ("8301/02.RL" & ~"8301/02.NL"))
+
+[undefined5]
+#
+Safety condition to be proved: 
+\begin{center}
+((8253(2).RU \(\wedge\) \(\neg\)8303/04.REL) \(\rightarrow\) (8303/04.NL \(\wedge\) \(\neg\)8303/04.RL))
+\end{center}
+#
+(("8253(2).RU" & ~"8303/04.REL") -> ("8303/04.NL" & ~"8303/04.RL"))
+
+[undefined6]
+#
+Safety condition to be proved: 
+\begin{center}
+((8254.RU \(\wedge\) \(\neg\)8301/02.REL) \(\rightarrow\) (8301/02.NL \(\wedge\) \(\neg\)8301/02.RL))
+\end{center}
+#
+(("8254.RU" & ~"8301/02.REL") -> ("8301/02.NL" & ~"8301/02.RL"))
+
+[undefined7]
+#
+Safety condition to be proved: 
+\begin{center}
+((8254.RU \(\wedge\) \(\neg\)8303/04.REL) \(\rightarrow\) (8303/04.RL \(\wedge\) \(\neg\)8303/04.NL))
+\end{center}
+#
+(("8254.RU" & ~"8303/04.REL") -> ("8303/04.RL" & ~"8303/04.NL"))
+
